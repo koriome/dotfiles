@@ -1,0 +1,58 @@
+// -*- mode: jsonc -*-
+
+// davey's waybar config
+
+// this is the beginning curly bracket please do not delete it
+{
+
+// general settings -----------------------------------------
+
+    "layer": "top",
+    "position": "left",
+    "width": 50,
+    "spacing": 4,
+    "modules-left": [
+        "niri/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right":[
+        "pulseaudio"
+    ],
+
+// modules-left ---------------------------------------------
+
+    "niri/workspaces": {
+        "format": "{index}"
+    },
+
+// modules-center -------------------------------------------
+
+    "clock": {
+        "interval": 60,
+        "format": "{:%H\n%M}",
+        "timezone": "America/Detroit",
+        "locale": "en_US.UTF-8",
+        "tooltip-format": "<small>{calendar}</small>",
+        "calendar": {
+            "mode": "month",
+            "weeks-pos": "right",
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+
+// modules-right --------------------------------------------
+
+    "pulseaudio": {
+        "format": "vol\n{volume}%",
+        "on-click": "pavucontrol"
+    }
+
+}

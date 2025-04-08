@@ -1,0 +1,70 @@
+/*
+
+    davey's waybar stylesheet
+
+*/
+
+/* ---- general style ---- */
+* {
+    font-family: "FontAwesome", "JetBrains Mono", monospace;
+}
+
+window#waybar {
+    background-color: rgba(43, 48, 59, 0.7);
+    border-right: 1px rgba(255, 209, 220, 0.7) solid;
+}
+
+tooltip {
+    border-radius: 0;
+    background-color: rgba(43, 48, 59, 1);
+    border: 1px solid #ffd1dc;
+}
+
+/* ---- modules-left ---- */
+
+.modules-left{
+}
+
+@keyframes active {
+    0% {padding: 0 5px;}
+    100% {padding: 5px 5px;}
+}
+@keyframes inactive {
+    0% {padding: 5px 5px;}
+    100% {padding: 0 5px;}
+}
+#workspaces {
+}
+#workspaces button {
+    border: 1px solid #ffd1dc;
+    color: #ffffff;
+    border-radius: 0;
+    padding: 0 5px;
+    margin: 5px 5px;
+    border-radius: 0;
+    animation-duration: .1s;
+    animation-name: inactive;
+}
+#workspaces button.active {
+    background-color: #c98b9a;
+    border: 0;
+    color: rgba(43, 48, 59, 1);
+    padding: 5px 5px;
+    border-radius: 0;
+    animation-duration: .1s;
+    animation-name: active;
+}
+
+/* ---- modules-center ---- */
+
+#clock {
+    color: #ffffff;
+}
+
+/* ---- modules-right ---- */
+
+#pulseaudio {
+    border: 1px solid #ffd1dc;
+    margin: 5px 5px;
+    color: #ffffff;
+}
