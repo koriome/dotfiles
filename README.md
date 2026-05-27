@@ -1,9 +1,3 @@
 welcome to my dotfiles
 
-beware the theme it kinda sucks
-
-vertical waybar is incredibly minimal because waybar is not meant to be vertical. i can't even use text-align
-
-the launch-waybar systemd service uses a script i yanked online that reloads waybar every time one of the config files is changed, probably just link to the main systemd service or use the startup options in the niri config
-
-![screenshot](https://github.com/koriome/dotfiles/blob/main/sc.png?raw=true)
+for the first time in over a year i am attempting to rice my desktop, this time i'm using mangowm. you may notice that there is no config for any sort of panel or bar, and this is because i am stupid
